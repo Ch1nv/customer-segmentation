@@ -1,7 +1,7 @@
 # Customer Segmentation
 ## Description
 This project is based on a [Kaggle notebook](https://www.kaggle.com/code/weddou/cluster-analysis-identify-customers-behaviors/notebook) and a [Kaggle dataset](https://www.kaggle.com/datasets/vetrirah/customer/data).
-We try to segment customers into 4 groups and find out properties of each group.
+This project is based on a Kaggle notebook and dataset. The goal is to segment customers into four distinct groups and analyze the characteristics and behaviors of each segment.
 
 ## Dataset
 - Dataset: [Customer Segmentation](https://www.kaggle.com/datasets/vetrirah/customer/data)
@@ -86,8 +86,7 @@ We will encode our discrete fields for our machine learning model so things like
 
 ## Clustering
 
-Since our dataset is a mix between numerical and categorical columns, we use K-Prototypes clustering algorithm that combines the features of both K-Means (Numerical Values) and K-Modes (Categorical Values) algorithms.
-
+Since the dataset contains both numerical and categorical features, we apply the K-Prototypes clustering algorithm, which combines the strengths of K-Means (for numerical data) and K-Modes (for categorical data).
 - Categorical variables: `Gender`, `Ever_Married`, `Graduated`, `Profession`, `Work_Experience`, `Spending_Score`
 - Numerical variables: `Age`, `Family_Size`
 
@@ -96,7 +95,7 @@ Since our dataset is a mix between numerical and categorical columns, we use K-P
 We have 4 groups of our customers, we analyze each of them.
 
 ### Balanced Family Professionals (Group 1)
-This cluster represents stable, career-focused individuals who balance professional responsibilities with family life. Their consumption patterns indicate practicality, moderate purchasing power, and a preference for cost-effective yet quality products.
+This cluster represents stable, career-focused individuals who successfully balance professional responsibilities with family life. Their consumption patterns reflect practicality, moderate purchasing power, and a preference for cost-effective yet high-quality products.
 
 **Business Insight:**
 This segment is ideal for mid-range products, family-oriented services, and value-driven marketing strategies. Promotions emphasizing quality, practicality, and long-term value are likely to resonate well with this group.
@@ -107,10 +106,10 @@ This segment is ideal for mid-range products, family-oriented services, and valu
 | Average Age    | 40                                               |
 | Jobs           | Mostly Artist / Entertainment / Engineer         |
 
-| Catgorical variables | Yes | No |
-|----------------------|--|--|
-| Ever Married         | 66.1% | 33.9%|
-| Graduated | 76.3% | 23.7% |
+| Categorical variables | Yes | No |
+|-----------------------|--|--|
+| Ever Married          | 66.1% | 33.9%|
+| Graduated             | 76.3% | 23.7% |
 
 |                   | Low    | Avg     | High  |
 |-------------------|--------|---------|-------|
@@ -145,7 +144,7 @@ This segment is ideal for mid-range products, family-oriented services, and valu
 </p>
 
 ### Established Affluent Professionals (Group 2)
-This segment reflects financially secure, experienced individuals who are likely to have reached advanced stages in their careers. Their consumption patterns suggest a balance between value awareness and the ability to afford higher-quality products, making them a relatively affluent and stable consumer group.
+This segment represents financially secure and experienced individuals who are likely to be in advanced stages of their careers. Their consumption patterns reflect a balance between value consciousness and the ability to afford higher-quality products, making them a relatively affluent and stable consumer group.
 
 **Business Insight:**
 This segment is well-suited for premium and high-quality products, financial services, healthcare, and lifestyle upgrades. Marketing strategies that emphasize reliability, brand reputation, and long-term value are likely to resonate strongly with this group.
@@ -156,10 +155,10 @@ This segment is well-suited for premium and high-quality products, financial ser
 | Average Age    | 54                                        |
 | Jobs           | Mostly Artist / Entertainment / Executive |
 
-| Catgorical variables | Yes   | No    |
-|----------------------|-------|-------|
-| Ever Married         | 87.5% | 12.5% |
-| Graduated | 79.4% | 20.6% |
+| Categorical variables | Yes   | No    |
+|-----------------------|-------|-------|
+| Ever Married          | 87.5% | 12.5% |
+| Graduated             | 79.4% | 20.6% |
 
 |                   | Low   | Avg   | High  |
 |-------------------|-------|-------|-------|
@@ -193,7 +192,7 @@ This segment is well-suited for premium and high-quality products, financial ser
 
 
 ### Senior Wealth-Diverse Elites (Group 3)
-This cluster represents a mature and experienced population with diverse financial behaviors, ranging from highly frugal to relatively affluent consumers.
+This cluster represents a mature and experienced population with diverse financial behaviors, ranging from highly frugal individuals to relatively affluent consumers. The clear polarization in spending patterns suggests significant variation in financial capacity and lifestyle preferences within this group.
 
 **Business Insight:**
 This segment requires differentiated strategies. High-spending individuals may respond well to premium healthcare, luxury services, and personalized experiences, while low-spending individuals may prioritize essential services, affordability, and reliability. Segmentation within this group is crucial to effectively address their diverse financial behaviors.
@@ -202,12 +201,12 @@ This segment requires differentiated strategies. High-spending individuals may r
 |----------------|--------------------------------------|
 | Family Size    | Mostly 2 / Sometimes 1 / Sometimes 3 |
 | Average Age    | 74                                   |
-| Jobs           | Mostly Laywer / Artist / Executive   |
+| Jobs           | Mostly Lawyer / Artist / Executive   |
 
-| Catgorical variables | Yes   | No    |
-|----------------------|-------|-------|
-| Ever Married         | 95.2% | 4.8%  |
-| Graduated | 63.1% | 36.9% |
+| Categorical variables | Yes   | No    |
+|-----------------------|-------|-------|
+| Ever Married          | 95.2% | 4.8%  |
+| Graduated             | 63.1% | 36.9% |
 
 |                   | Low   | Avg   | High  |
 |-------------------|-------|-------|-------|
@@ -240,7 +239,7 @@ This segment requires differentiated strategies. High-spending individuals may r
 </p>
 
 ### Young Family Starters (Group 4)
-This cluster reflects an early life-stage segment with high financial pressure due to family responsibilities and limited income.
+This cluster represents individuals at an early life stage, facing relatively high financial pressure due to growing family responsibilities and limited income. Their overall behavior reflects a need to carefully manage expenses while supporting household needs.
 
 **Business Insight:**
 This segment is highly price-sensitive and responds well to affordable, essential, and family-oriented products. Promotions such as discounts, bundled offers, and value deals are likely to be effective. Services related to childcare, basic healthcare, and entry-level financial planning may also resonate strongly with this group.
@@ -251,10 +250,10 @@ This segment is highly price-sensitive and responds well to affordable, essentia
 | Average Age    | 26                                   |
 | Jobs           | Mostly Healthcare / Doctor / Artist  |
 
-| Catgorical variables | Yes   | No    |
-|----------------------|-------|-------|
-| Ever Married         | 82.0% | 18.0% |
-| Graduated | 37.4% | 62.6% |
+| Categorical variables | Yes   | No    |
+|-----------------------|-------|-------|
+| Ever Married          | 82.0% | 18.0% |
+| Graduated             | 37.4% | 62.6% |
 
 |                   | Low   | Avg  | High |
 |-------------------|-------|------|------|
@@ -285,3 +284,16 @@ This segment is highly price-sensitive and responds well to affordable, essentia
 <p align="center">
   <em>Profession </em>
 </p>
+
+
+## Final Conclusion
+
+This analysis identifies four distinct customer segments with clear differences in demographics, family structure, and spending behavior.
+
+Among them, the **Balanced Family Professionals** and **Established Affluent Professionals** represent the most stable and commercially valuable segments. They demonstrate moderate to strong purchasing power, stable family structures, and consistent consumption patterns, making them ideal targets for mid-range to premium products and long-term customer engagement strategies.
+
+The **Senior Wealth-Diverse Elites** segment exhibits a unique polarization in spending behavior, indicating the presence of both highly conservative and high-value customers. This suggests that a more refined, sub-segmentation strategy may be necessary to effectively capture value from this group.
+
+In contrast, the **Young Family Starters** segment is characterized by limited financial capacity and high price sensitivity. While their immediate commercial value may be lower, they represent a potential long-term growth segment as their income and purchasing power increase over time.
+
+Overall, this segmentation highlights the importance of differentiated marketing strategies. Rather than applying a one-size-fits-all approach, businesses can leverage these insights to tailor products, pricing, and communication strategies to better align with the needs and behaviors of each customer group.
