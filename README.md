@@ -100,9 +100,16 @@ Since the dataset contains both numerical and categorical features, we apply the
 - Categorical variables: `Gender`, `Ever_Married`, `Graduated`, `Profession`, `Work_Experience`, `Spending_Score`
 - Numerical variables: `Age`, `Family_Size`
 
+When the data was divided into three clusters, the reduction in cost showed the largest improvement rate. 
+Therefore, we segmented the customer data into three clusters.
+
+<p align="center">
+  <img src="images/k%20prototype/kprototype_elbow.png">
+</p>
+
+
 
 ## Analysis
-We have 3 groups of our customers, we analyze each of them.
 
 ### Stable Mid-Life Creative Households (Cluster 1)
 
