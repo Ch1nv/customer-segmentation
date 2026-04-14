@@ -5,9 +5,9 @@ This project applies **K-Prototypes clustering** to segment customers into three
 
 Using **PCA visualization**, the clusters show clear behavioral patterns:
 
+- <span style="color:#e41a1c;"><strong>Cluster 1 – Stable Mid-Life Creative Households</strong></span>: middle-aged, balanced, moderate spending  
 - <span style="color:#377eb8;"><strong>Cluster 2 – Young Budget Healthcare Starters</strong></span>: younger, healthcare-oriented, low spending  
 - <span style="color:#4daf4a;"><strong>Cluster 3 – Senior Premium Professionals</strong></span>: older, affluent, higher-value customers  
-- <span style="color:#e41a1c;"><strong>Cluster 1 – Stable Mid-Life Creative Households</strong></span>: middle-aged, balanced, moderate spending  
 
 <p align="center">
   <img src="images/PCA/pca_customer_clusters_enhanced.png">
